@@ -1,28 +1,3 @@
-# Michele Bologna's theme
-# https://www.michelebologna.net
-#
-# This a theme for oh-my-zsh. Features a colored prompt with:
-# * username@host: [jobs] [git] workdir %
-# * hostname color is based on hostname characters. When using as root, the
-# prompt shows only the hostname in red color.
-# * [jobs], if applicable, counts the number of suspended jobs tty
-# * [git], if applicable, represents the status of your git repo (more on that
-# later)
-# * '%' prompt will be green if last command return value is 0, yellow otherwise.
-#
-# git prompt is inspired by official git contrib prompt:
-# https://github.com/git/git/tree/master/contrib/completion/git-prompt.sh
-# and it adds:
-# * the current branch
-# * '%' if there are untracked files
-# * '$' if there are stashed changes
-# * '*' if there are modified files
-# * '+' if there are added files
-# * '<' if local repo is behind remote repo
-# * '>' if local repo is ahead remote repo
-# * '=' if local repo is equal to remote repo (in sync)
-# * '<>' if local repo is diverged
-
 local green="%{$fg_bold[green]%}"
 local red="%{$fg_bold[red]%}"
 local cyan="%{$fg_bold[cyan]%}"
